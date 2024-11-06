@@ -2,7 +2,7 @@
 import { useContext, useEffect, useState } from "react";
 import { getAllCartItems, removeCartItemFromLS } from "../utils/cart_script";
 import { CartContext } from "../routes/New1";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Cart = ({ gadgets }) => {
   const [, setCart] = useContext(CartContext);
@@ -10,6 +10,7 @@ const Cart = ({ gadgets }) => {
   const [allAddedCarts, setAllAddedCarts] = useState([]);
   const [cartdata, setCartdata] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setAllAddedCarts(getAllCartItems());
@@ -32,6 +33,7 @@ const Cart = ({ gadgets }) => {
     localStorage.removeItem("carts");
     setAllAddedCarts([]);
     setCart(0);
+    navigate("/");
   };
 
   const handleDelete = (id) => {
@@ -125,9 +127,9 @@ const Cart = ({ gadgets }) => {
           <h6>Total Price: {totalPrice}</h6>
           <div className="modal-action flex items-center justify-center">
             <form method="dialog">
-              <Link to={"/"} className="btn" onClick={handlePurchase}>
+              <button className="btn" onClick={handlePurchase}>
                 Close
-              </Link>
+              </button>
             </form>
           </div>
         </div>
