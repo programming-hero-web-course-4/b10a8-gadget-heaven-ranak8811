@@ -6,6 +6,7 @@ import Gadgets from "../pages/Gadgets";
 import Details from "../pages/Details";
 import Dashboard from "../pages/Dashboard";
 import Statistics from "../pages/Statistics";
+import Login from "../pages/Login";
 
 const routes = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const routes = createBrowserRouter([
       {
         path: "/statistic",
         element: <Statistics></Statistics>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },

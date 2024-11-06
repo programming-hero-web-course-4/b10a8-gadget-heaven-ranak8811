@@ -84,6 +84,14 @@ const Navbar = () => {
             >
               Dashboard
             </NavLink>
+            <NavLink
+              to={"/login"}
+              className={({ isActive }) =>
+                `font-bold ${isActive ? "text-warning" : "hover:text-error"}`
+              }
+            >
+              Login
+            </NavLink>
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl">
@@ -115,6 +123,14 @@ const Navbar = () => {
             }
           >
             Dashboard
+          </NavLink>
+          <NavLink
+            to={"/login"}
+            className={({ isActive }) =>
+              `font-bold ${isActive ? "text-warning" : "hover:text-error"}`
+            }
+          >
+            Login
           </NavLink>
         </ul>
       </div>
