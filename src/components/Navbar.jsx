@@ -26,7 +26,14 @@ const Navbar = () => {
   return (
     <div
       className={`navbar mt-3 ${
-        location.pathname === "/"
+        [
+          "/",
+          "/category/All",
+          "/category/Smartphones",
+          "/category/Laptops",
+          "/category/Smartwatches",
+          "/category/Accessories",
+        ].includes(location.pathname)
           ? "bg-[#9538E2] text-white  rounded-t-xl"
           : "navbar bg-base-100"
       }`}

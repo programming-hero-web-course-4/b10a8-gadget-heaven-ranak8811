@@ -49,26 +49,28 @@ const Cart = ({ gadgets }) => {
     <section>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <h4 className="font-bold text-2xl mb-4 md:mb-0">Cart</h4>
-        <div className="flex space-x-4 items-center">
-          <h6 className="font-bold">Total Cost: ${totalPrice}</h6>
-          <button
-            onClick={sortByPriceDesc}
-            className="text-[#9538E2] py-1 px-3 rounded-full border border-purple-600"
-          >
-            Sort by Price
-            <i className="fa-solid fa-arrow-down-wide-short ml-2"></i>
-          </button>
-          <button
-            onClick={() => document.getElementById("my_modal_5").showModal()}
-            disabled={getAllCartItems().length === 0}
-            className={`bg-[#9538E2] text-white py-1 px-3 rounded-full ${
-              getAllCartItems().length === 0
-                ? "text-gray-400 bg-gray-200 cursor-not-allowed"
-                : ""
-            }`}
-          >
-            Purchase
-          </button>
+        <div className="flex space-x-4 flex-col md:flex-row items-center">
+          <h6 className="font-bold mb-3 md:mb-0">Total Cost: ${totalPrice}</h6>
+          <div className="flex gap-3">
+            <button
+              onClick={sortByPriceDesc}
+              className="text-[#9538E2] py-1 px-3 rounded-full border border-purple-600"
+            >
+              Sort by Price
+              <i className="fa-solid fa-arrow-down-wide-short ml-2"></i>
+            </button>
+            <button
+              onClick={() => document.getElementById("my_modal_5").showModal()}
+              disabled={getAllCartItems().length === 0}
+              className={`bg-[#9538E2] text-white py-1 px-3 rounded-full ${
+                getAllCartItems().length === 0
+                  ? "text-gray-400 bg-gray-200 cursor-not-allowed"
+                  : ""
+              }`}
+            >
+              Purchase
+            </button>
+          </div>
         </div>
       </div>
 
@@ -76,22 +78,26 @@ const Cart = ({ gadgets }) => {
         {cartdata.map((item, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center md:flex-row gap-10 border rounded-xl p-10 m-3"
+            className="flex flex-col items-center md:flex-row gap-10 border rounded-xl p-10 m-3 justify-between"
           >
-            <div>
-              <img
-                className="w-[200px] object-cover rounded-xl"
-                src={item.product_image}
-                alt=""
-              />
-            </div>
-            <div className="flex justify-between">
-              <div className="flex flex-col justify-center items-start space-y-6">
-                <h4 className="text-2xl font-bold">{item.product_title}</h4>
-                <p className="font-thin">{item.description}</p>
-                <p className="font-bold">Price: ${item.price}</p>
+            <div className="flex flex-col items-center md:flex-row gap-10">
+              <div>
+                <img
+                  className="w-[200px] object-cover rounded-xl"
+                  src={item.product_image}
+                  alt=""
+                />
               </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col justify-center items-start space-y-6">
+                  <h4 className="text-2xl font-bold">{item.product_title}</h4>
+                  <p className="font-thin">{item.description}</p>
+                  <p className="font-bold">Price: ${item.price}</p>
+                </div>
+              </div>
+            </div>
 
+            <div>
               <button
                 onClick={() => handleDelete(item.product_id)}
                 className="flex justify-end items-end"
