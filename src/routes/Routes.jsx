@@ -22,6 +22,11 @@ const routes = createBrowserRouter([
             element: <Gadgets></Gadgets>,
             loader: () => fetch("../fakeGadgets.json"),
           },
+          {
+            path: "/category/:category",
+            element: <Gadgets></Gadgets>,
+            loader: () => fetch("../fakeGadgets.json"),
+          },
         ],
       },
       {
