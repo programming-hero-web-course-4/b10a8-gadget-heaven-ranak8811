@@ -67,7 +67,7 @@ const Details = () => {
 
   return (
     <div className="relative">
-      <div className="bg-[#9538E2] text-white p-1 lg:mb-[400px] md:mb-[440px] mb-[850px]">
+      <div className="bg-[#9538E2] text-white p-1 lg:mb-[430px] md:mb-[440px] mb-[850px]">
         <div className="w-7/12 mx-auto">
           <Heading
             title={"Product Details"}
@@ -80,7 +80,7 @@ const Details = () => {
         <div className="h-28"></div>
       </div>
 
-      <div className="flex flex-col md:flex-row bg-base-100 rounded-xl gap-6 p-6 absolute lg:top-[180px] lg:right-[100px] md:top-[200px] md:w-10/12 md:mx-auto md:right-[60px] top-[240px] w-11/12 mx-auto right-[18px]">
+      <div className="flex flex-col w-11/12 md:w-10/12 md:flex-row bg-base-100 rounded-xl gap-6 p-6 absolute lg:-top-[55px] md:-top-[45px] -top-[155px] left-1/2 transform -translate-x-1/2 translate-y-1/2">
         <div>
           <img className="w-[425px] rounded-xl" src={product_image} alt="" />
         </div>
