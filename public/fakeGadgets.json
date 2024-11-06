@@ -1,0 +1,171 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/kXS5n9r/Iphone-15-Pro-Max.jpg",
+    "category": "Smartphones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Samsung Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/Scr0Ztq/S24-Ultra.jpg",
+    "category": "Smartphones",
+    "price": 1099,
+    "description": "The most powerful Galaxy S ever.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 3 processor",
+      "Quad-camera system (200MP Main, 50MP Telephoto, 12MP Ultrawide)",
+      "5000mAh battery",
+      "Up to 1TB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/gTr64v5/Google-Pixel-8-Pro.jpg",
+    "category": "Smartphones",
+    "price": 999,
+    "description": "The Pixel, perfected.",
+    "specification": [
+      "6.7-inch Smooth Display",
+      "Google Tensor G3 processor",
+      "Triple-camera system (50MP Main, 48MP Telephoto, 12MP Ultrawide)",
+      "48MP front camera",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "Apple iPhone 15",
+    "product_image": "https://i.ibb.co.com/w0kQfxZ/Iphone-15.jpg",
+    "category": "Smartphones",
+    "price": 799,
+    "description": "The new iPhone, now even better.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "Dual-camera system (48MP Main, 12MP Ultrawide)",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 5,
+    "product_title": "Samsung Galaxy S24",
+    "product_image": "https://i.ibb.co.com/3WrYym3/Galaxy-S24.jpg",
+    "category": "Smartphones",
+    "price": 899,
+    "description": "The best Galaxy S yet.",
+    "specification": [
+      "6.1-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 3 processor",
+      "Triple-camera system (50MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "4000mAh battery",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 6,
+    "product_title": "Google Pixel 8",
+    "product_image": "https://i.ibb.co.com/8dmtHSN/Pixel-8.jpg",
+    "category": "Smartphones",
+    "price": 699,
+    "description": "The Pixel, reimagined.",
+    "specification": [
+      "6.3-inch Smooth Display",
+      "Google Tensor G3 processor",
+      "Dual-camera system (50MP Main, 12MP Ultrawide)",
+      "10.8MP front camera",
+      "Up to 256GB storage"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": 7,
+    "product_title": "Apple MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/pw8vbPC/Mac-Book-Pro-14.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "The ultimate laptop for professionals.",
+    "specification": [
+      "14-inch Liquid Retina XDR display",
+      "M2 Pro chip",
+      "16-core GPU",
+      "Up to 32GB unified memory",
+      "Up to 2TB SSD storage"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 8,
+    "product_title": "Dell XPS 13 Plus",
+    "product_image": "https://i.ibb.co.com/5k54Jkb/Dell-XPS.jpg",
+    "category": "Laptops",
+    "price": 999,
+    "description": "The most powerful XPS ever.",
+    "specification": [
+      "13.4-inch InfinityEdge display",
+      "Intel Core i7-13700H processor",
+      "Iris Xe Graphics",
+      "16GB LPDDR5X memory",
+      "512GB SSD storage"
+    ],
+    "availability": true,
+    "rating": 4.1
+  },
+  {
+    "product_id": 9,
+    "product_title": "Apple Watch Ultra",
+    "product_image": "https://i.ibb.co.com/vQC2pF5/Watch-Ultra.jpg",
+    "category": "Smartwatches",
+    "price": 799,
+    "description": "The most rugged Apple Watch ever.",
+    "specification": [
+      "2.0-inch display",
+      "S8 chip",
+      "Action button",
+      "Up to 36 hours of battery life",
+      "Cellular connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 10,
+    "product_title": "Samsung Galaxy Watch 6 Classic",
+    "product_image": "https://i.ibb.co.com/vP3f9dk/Galaxy-Watch-6.jpg",
+    "category": "Smartwatches",
+    "price": 449,
+    "description": "The classic smartwatch, reimagined.",
+    "specification": [
+      "1.5-inch Super AMOLED display",
+      "Exynos W930 processor",
+      "Blood pressure monitoring",
+      "Up to 72 hours of battery life",
+      "Bluetooth connectivity"
+    ],
+    "availability": true,
+    "rating": 4.2
+  }
+]
