@@ -43,7 +43,7 @@ const Gadgets = () => {
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-10/12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-6 w-10/12 mx-auto">
         {filteredGadgets.length > 0 ? (
           filteredGadgets.map((gadget, idx) => (
             <Card key={idx} gadget={gadget} />

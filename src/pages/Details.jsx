@@ -66,18 +66,21 @@ const Details = () => {
   };
 
   return (
-    <div>
-      <div className="bg-[#9538E2] text-white p-1">
-        <Heading
-          title={"Product Details"}
-          subtitle={
-            "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
-          }
-        />
+    <div className="relative">
+      <div className="bg-[#9538E2] text-white p-1 lg:mb-[400px] md:mb-[440px] mb-[850px]">
+        <div className="w-7/12 mx-auto">
+          <Heading
+            title={"Product Details"}
+            subtitle={
+              "Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+            }
+          />
+        </div>
+
         <div className="h-28"></div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 p-6">
+      <div className="flex flex-col md:flex-row bg-base-100 rounded-xl gap-6 p-6 absolute lg:top-[180px] lg:right-[100px] md:top-[200px] md:w-10/12 md:mx-auto md:right-[60px] top-[240px] w-11/12 mx-auto right-[18px]">
         <div>
           <img className="w-[425px] rounded-xl" src={product_image} alt="" />
         </div>

@@ -38,7 +38,10 @@ const Wishlist = ({ gadgets }) => {
       <br />
       <div>
         {desiredGadgets.map((item, idx) => (
-          <div key={idx} className="flex gap-10 border rounded-xl p-10 m-3">
+          <div
+            key={idx}
+            className="flex flex-col md:flex-row items-center gap-10 border rounded-xl p-10 m-3"
+          >
             <div>
               <img
                 className="w-[200px] object-cover rounded-xl"

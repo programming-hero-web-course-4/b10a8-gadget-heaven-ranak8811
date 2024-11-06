@@ -3,7 +3,7 @@ import Heading from "./Heading";
 const Footer = () => {
   return (
     <div>
-      <div>
+      <div className="w-auto">
         <Heading
           title={"Gadget Heaven"}
           subtitle={
