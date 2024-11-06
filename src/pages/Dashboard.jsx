@@ -9,12 +9,11 @@ const Dashboard = () => {
   useTitle("Dashboard");
   const [activeComponent, setActiveComponent] = useState("Cart");
   const allGadgets = useLoaderData();
-  // console.log(allGadgets);
 
   return (
     <div>
       <div className="bg-[#9538E2] text-white py-10">
-        <div className="w-7/12 mx-auto">
+        <div className="md:w-7/12 w-11/12 mx-auto">
           <Heading
             title={"Dashboard"}
             subtitle={

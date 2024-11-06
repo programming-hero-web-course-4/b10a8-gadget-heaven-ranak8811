@@ -6,16 +6,14 @@ import { getAllWishlistItems } from "../utils/wishList_script";
 
 const Navbar = () => {
   const location = useLocation();
-  // console.log(location.pathname);
   const [cart] = useContext(CartContext);
   const [wish] = useContext(WishContext);
-  // console.log(wish);
+
   const [totalData, setTotalData] = useState(0);
   useEffect(() => {
     const data = getAllCartItems();
     setTotalData(data.length);
   }, [cart]);
-  // console.log(totalData);
 
   const [totalWish, setTotalWish] = useState(0);
   useEffect(() => {

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const Card = ({ gadget }) => {
-  //   console.log(gadget);
   const { product_id, product_title, product_image, price } = gadget;
   return (
     <div className="card bg-base-100 w-11/12 mx-auto lg:w-80 md:w-[300px]  shadow-xl">
