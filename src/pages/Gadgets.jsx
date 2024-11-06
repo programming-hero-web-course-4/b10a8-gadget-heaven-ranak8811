@@ -36,22 +36,10 @@ const Gadgets = () => {
           >
             {category.name}
           </Link>
-          // <button
-          //   key={category.value}
-          //   className={`btn w-full rounded-lg ${
-          //     selectedCategory === category.value
-          //       ? "bg-purple-500 text-white"
-          //       : "bg-gray-200 text-black"
-          //   }`}
-          //   onClick={() => setSelectedCategory(category.value)}
-          // >
-          //   {category.name}
-          // </button>
         ))}
       </div>
 
-      {/* Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-6 w-10/12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-6 w-10/12 mx-auto gap-3">
         {filteredGadgets.length > 0 ? (
           filteredGadgets.map((gadget, idx) => (
             <Card key={idx} gadget={gadget} />
